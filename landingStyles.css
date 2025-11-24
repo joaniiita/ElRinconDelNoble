@@ -1,0 +1,253 @@
+
+*{
+    box-sizing: content-box;
+    margin: 0 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--body-color);
+    font-size: var(--font-size-body);
+    text-align: justify;
+}
+
+main{
+    margin: 0 5rem;
+}
+
+.contactHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    color: white;
+    padding: 1em 1em;
+
+}
+
+.sectionStyle{
+    border-radius: 1em;
+    background-color: white;
+    padding: 2em 2em;
+    margin: 1em 0.7em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.menu{
+    text-align: center;
+}
+
+.btn{
+    background-color: var(--button-color);
+    color: white;
+    padding: 0.7em 4em;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.65em;
+    margin-top: 1.5em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+iframe{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover{
+    background-color: var(--button-hover-color);
+    transition: 0.3s all ease;
+}
+
+
+h2{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+.conocenos p{
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 0 3em;
+}
+
+.conocenos img{
+    width: 86%;
+    height: 16em;
+    object-fit: cover;
+    border-radius: 1em;
+    margin: 1em 1em;
+}
+
+.profile{
+    display: flex;
+    margin: 1em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileStars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35em;
+}
+
+.stars{
+    text-align: center;
+}
+
+.stars img{
+    margin-left: 0.5em;
+}
+
+.name{
+    margin: 0 1em;
+}
+
+#name{
+    font-weight: bolder;
+}
+
+#date{
+    color: var(--button-color);
+}
+
+form input{
+    border: 2px solid var(--input-border);
+    border-radius: 0.5em;
+
+    padding: 0.6em 0.3em;
+    margin-bottom: 1em;
+
+}
+
+form textarea{
+    border: 2px solid var(--input-border);
+    width: 93%;
+    border-radius: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.formularioContacto{
+    display: flex;
+    gap: 1em;
+}
+
+.formularioContacto iframe{
+    margin: 1em 0;
+    border-radius: 1em;
+    height: auto;
+    width: 50%;
+}
+
+.formularioContacto input{
+    width: 90%;
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+}
+
+.left, .right{
+    width: 50%;
+}
+
+.left{
+    margin-right: 0.55em;
+
+}
+
+
+
+#contacto{
+    text-align: start;
+}
+
+.reviews {
+    position: relative;
+
+}
+
+.reviews .comment{
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    width: 50%;
+    margin: 1em auto;
+
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #444;
+}
+
+.arrow.left { left: -50px; }
+.arrow.right { right: -50px; }
+
+.arrow:hover {
+    color: #999;
+}
+
+
+
+@media (max-width: 992px){
+
+    body{
+        font-size: 0.8em;
+    }
+
+    main{
+        margin: 0 0;
+    }
+
+    .conocenos p{
+        margin: 0 0;
+    }
+
+    .conocenos img{
+        display:none;
+    }
+
+    .formularioContacto{
+        display: block;
+    }
+
+    .formularioContacto iframe{
+        width: 95%;
+        margin: 0.7em 0.7em;
+        height: 20em !important;
+    }
+
+    #prev, #next{
+        display: none;
+    }
+
+    .reviews .comment{
+
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .profileStars{
+        display: block;
+        gap: 0;
+    }
+
+}
+

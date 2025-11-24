@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="landingStyles.css">
+    <link rel="stylesheet" href="styles-globales.css">
+    <title>LandingPage</title>
+</head>
+<body>
+<header>
+    <div class="contactHeader">
+        <div class="telephone">
+            <p>669 89 96 19</p>
+        </div>
+        <div class="gmail">
+            <p>info@elrincondelnoble.net</p>
+        </div>
+        <div class="facebook">
+            <p>facebook</p>
+        </div>
+    </div>
+    <div class="navHeader">
+        <nav class="navbar">
+            <a href="landingpage.html" class="logo"><img src="images/logo-el-rincon-de-noble.png" alt=""></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="landingpage.html">Inicio</a></li>
+                <li><a href="menus.html">Menú</a></li>
+                <li id="last"><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="menu sectionStyle">
+        <h1>Tenemos el menú perfecto para cada ocasión</h1>
+        <button onclick="window.location.href='menus.html'" class="btn">Menú</button>
+        <button onclick="window.location.href='menus.html#carta'" class="btn">Carta</button>
+    </section>
+
+    <section class="conocenos center">
+        <div class="conocenosTexto sectionStyle">
+            <h2>¡Ven a conocernos!</h2>
+            <p>Tras varias generaciones de padres a hijos en <strong>EL RINCÓN DEL NOBLE</strong> hemos sabido combinar la
+                cocina minimalista con la tradición y el saber de la cocina riojana.</p>
+            <br>
+            <p>La selección de los mejores productos y la experiencia a lo largo de estos años es lo que nos avala como
+                referente de la restauración de la cocina riojana en nuestra comarca.</p>
+        </div>
+        <img src="images/rincondelnoble-8.jpg" alt="">
+    </section>
+
+    <section class="reviews sectionStyle">
+        <h2>¿Qué opinan nuestros clientes?</h2>
+
+        <button class="arrow left" id="prev">❮</button>
+        <button class="arrow right" id="next">❯</button>
+
+        <div id="review-container"></div>
+    </section>
+
+    <section class="formularioContacto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.037705167396!2d-2.851887523251587!3d42.575722171173815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4f8be6601f59b9%3A0x4bafa5f6cdf55e99!2sRestaurante%20El%20Rinc%C3%B3n%20del%20Noble!5e0!3m2!1sen!2ses!4v1760689424978!5m2!1sen!2ses"
+                width="100%" height="190" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form class="sectionStyle" method="POST" action=" ">
+            <h2 id="contacto">Contáctanos</h2>
+
+            <div class="col">
+                <div class="left">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="right">
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                </div>
+            </div>
+
+            <textarea name="mensaje" id="mensaje" cols="15" rows="3" placeholder="Introduce tu mensaje"></textarea>
+            <div class="center">
+                <button class="btn" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="mapaWeb">
+        <a href="#menus">Menús</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#avisoLegal">Aviso Legal</a>
+    </div>
+    <a class="center politic" href="#politicaPrivacidad">Política de privacidad</a>
+    <div class="center copyright">
+        <p>Copyright ©2025 · El Rincón del Noble S.C.</p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+
+<script>
+    const reviews = [
+        {
+            name: "Pepe",
+            date: "Hace un mes",
+            img: "images/image%201.png",
+            stars: 5,
+            comment: "While doing a wine tour in Haro, La Rioja we rushed to have a late lunch here before they closed at 4pm arriving just past 3:30. The hostess (Lavi) told me the kitchen was closed but would try and accommodate us with few items still available on the menu. I am so glad she gave us the opportunity to sit and dine here, I can’t even begin to explain the taste of the olive oil served with the tapas of ibérico with picos (aka) breadsticks. The entree was nothing short of amazing, what can I say. Bacalao a la Riojana was perfection, the sauce was the perfect compliment to the fish. The steak was a bit undercooked for my liking but still very flavorful. The torrija was definitely the star of the show, my husband who doesn’t eat desert ever totally agreed. To top this all off Lavinia offered us a chupito to end our superb meal."
+        },
+        {
+            name: "María",
+            date: "Hace 2 semanas",
+            img: "images/image%201.png",
+            stars: 4,
+            comment: "We had a wonderful experience in this restaurant today, we ordered a salad starter. For mains - cod served in a beautiful pepper and tomato sauce and grouper stuffed and served with caramelised apples. The staff were extremely friendly and welcoming and a plus, one of the staff members spoke excellent English. We would definitely come back again."
+        },
+        {
+            name: "Carlos",
+            date: "Hace 3 días",
+            img: "images/image%201.png",
+            stars: 5,
+            comment: "It turned out to find an open restaurant on Monday in Haro was a challenge, but El Rincon del Noble ‘stepped in’ to fill unexpected void in our day trip. The food was solid, generous portions for salads (favorite part) and entrees (duck confit by far was a good choice) Very pleasant atmosphere and friendly service. Thank you!"
+        }
+    ];
+
+    let current = 0;
+    const container = document.getElementById("review-container");
+
+    function showReview(index) {
+        const r = reviews[index];
+        container.innerHTML = `
+            <div class="profileStars">
+                <div class="profile">
+                    <img src="${r.img}" alt="avatar profile">
+                    <div class="name">
+                        <p id="name">${r.name}</p>
+                        <p id="date">${r.date}</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    ${'<img src="images/estrella.png" alt="star">'.repeat(r.stars)}
+                </div>
+            </div>
+            <div class="comment">
+                <p>${r.comment}</p>
+            </div>
+        `;
+    }
+
+    document.getElementById("next").addEventListener("click", () => {
+        current = (current + 1) % reviews.length;
+        showReview(current);
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+        current = (current - 1 + reviews.length) % reviews.length;
+        showReview(current);
+    });
+
+    showReview(current);
+</script>
+</body>
+</html>

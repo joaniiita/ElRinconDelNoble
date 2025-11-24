@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reservasEstilos.css">
+    <link rel="stylesheet" href="styles-globales.css">
+    <script src="reservas.js"></script>
+    <title>Reserva Ya</title>
+</head>
+<body>
+<header>
+    <div class="contactHeader">
+        <div class="telephone">
+            <p>669 89 96 19</p>
+        </div>
+        <div class="gmail">
+            <p>info@elrincondelnoble.net</p>
+        </div>
+        <div class="facebook">
+            <p>facebook</p>
+        </div>
+    </div>
+    <div class="navHeader">
+        <nav class="navbar">
+            <a  href="landingpage.html" class="logo"><img src="images/logo-el-rincon-de-noble.png" alt=""></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="landingpage.html">Inicio</a></li>
+                <li><a href="menus.html">Menú</a></li>
+                <li id="last"><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="reserva-wrapper">
+        <section class="reserva">
+            <div class="reserva-form">
+                <h2>Reserva Una Mesa</h2>
+
+                <label>Personas:</label>
+                <div class="personas">
+                    <button type="button" class="btn-control" id="mas">+</button>
+                    <input type="number" id="personas" min="1" value="1">
+                    <button type="button" class="btn-control" id="menos">−</button>
+                </div>
+
+                <label>Fecha:</label>
+                <input type="date">
+
+                <label>Hora:</label>
+                <input type="time">
+            </div>
+        </section>
+
+        <div class="reserva-img">
+            <img src="images/imagen-reserva.jpg" alt="Restaurante El Rincón del Noble">
+        </div>
+        
+    </div>
+
+    <section class="info-adicional">
+        <h3>Información Adicional</h3>
+        <textarea placeholder="Escribe tus preferencias o comentarios"></textarea>
+    </section>
+
+    <div class="boton-reservar">
+        <button>Reservar</button>
+    </div>
+</main>
+<footer>
+    <div class="mapaWeb">
+        <a href="#menus">Menús</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#avisoLegal">Aviso Legal</a>
+
+    </div>
+
+    <a class="center politic" href="#politicaPrivacidad">Política de privacidad</a>
+
+    <div class="center copyright">
+        <p>Copyright ©2025 · El Rincón del Noble S.C.</p>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

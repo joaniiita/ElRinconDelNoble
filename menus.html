@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles-globales.css">
+    <script src="menusjs.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="contactHeader">
+        <div class="telephone">
+            <p>669 89 96 19</p>
+        </div>
+        <div class="gmail">
+            <p>info@elrincondelnoble.net</p>
+        </div>
+        <div class="facebook">
+            <p>facebook</p>
+        </div>
+    </div>
+    <div class="navHeader">
+        <nav class="navbar">
+            <a href="landingpage.html" class="logo"><img src="images/logo-el-rincon-de-noble.png" alt=""></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="landingpage.html">Inicio</a></li>
+                <li><a href="menus.html">Menú</a></li>
+                <li id="last"><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="menu-container">
+    <div class="card">
+        <h2>Menu bodega</h2>
+        <h3>Entrantes</h3>
+        <ul>
+            <li>Jamón iberico y cecina de leon</li>
+            <li>Piruletas de gamba y vieiras</li>
+            <li>Anchoas de santoña con pimientos de cristal y escama de patata</li>
+            <li>Champis con queso de cabra, foie y jamón iberico</li>
+        </ul>
+        <h3>Segundo plato</h3>
+        <ul>
+            <li>Entrecot de ternera a la plancha</li>
+            <li>Ciervo estofado</li>
+            <li>Codillo asado con guarnición</li>
+            <li>Confit de pato con manzana caramelizada</li>
+            <li>Manitas de cerdo en salsa Riojana</li>
+        </ul>
+        <h3>Postre</h3>
+        <ul>
+            <li>Tarta casera</li>
+            <li>Helado</li>
+            <li>Sorbetes</li>
+        </ul>
+
+        -----
+
+        <p>Incluye vino blanco / tinto crianza recomendado y agua.</p>
+        <p><b>Total:</b> 49€ (IVA incluido)</p>
+    </div>
+
+    <div class="card">
+        <h2>Menú Especial Degustación</h2>
+        <h3>Entrantes</h3>
+        <ul>
+            <li>Jamón ibérico</li>
+            <li>Gambas a la plancha</li>
+            <li>Almejas al estilo Noble</li>
+            <li>Ensalada pulpo con langostinos</li>
+            <li>Croquetas cremosas de jamón ibérico</li>
+        </ul>
+        <h3>Segundo plato</h3>
+        <ul>
+            <li>Solomillo a la plancha (salsa roquefort / foie fresco suplemento)</li>
+            <li>Chuletillas de cordero con patatas fritas y pimientos asados</li>
+            <li>Rabo de toro con hongos al vino tinto</li>
+            <li>Pirámide de lomo de vaca con foie fresco, almendras y salsa</li>
+        </ul>
+        <h3>Postre</h3>
+        <ul>
+            <li>Tarta casera</li>
+            <li>Helado</li>
+            <li>Sorbetes</li>
+        </ul>
+
+        -----
+
+        <p>Menú maridado con vino blanco, tinto rioja y cava recomendado.</p>
+        <p><b>Total:</b> 69€ (IVA incluido)</p>
+    </div>
+
+    <div class="card">
+        <h2>Menú Tradición</h2>
+        <h3>Entrantes</h3>
+        <ul>
+            <li>Jamón ibérico y tabla de quesos con panecitos tostados</li>
+            <li>Gambas a la plancha</li>
+            <li>Espárrago relleno</li>
+            <li>Ensalada de pimientos riojanos con ventresca y berenjena asada</li>
+        </ul>
+        <h3>Segundo plato</h3>
+        <ul>
+            <li>Rabo de toro con hongos al vino tinto</li>
+            <li>Ciervo estofado al estilo Noble</li>
+            <li>Magret de pato con frutas del bosque, boletus y salsas especiales</li>
+            <li>Solomillo de ternera a la plancha con patatas fritas y pimientos asados</li>
+        </ul>
+        <h3>Postre</h3>
+        <ul>
+            <li>Tartas variadas</li>
+            <li>Sorbetes</li>
+            <li>Helados artesanos</li>
+        </ul>
+
+        -----
+
+        <p>Menú maridado con vino blanco, tinto rioja y cava recomendado.</p>
+        <p><b>Total:</b> 59€ (IVA incluido)</p>
+    </div>
+</div>
+
+<div class="individual-container">
+    <div class="card">
+        <h2>Platos individuales</h2>
+        <div class="dish-container">
+
+            <div class="dish-card" data-collapsed="true">
+                <img src="images/chuleta.jpg" alt="Chuletillas de cordero">
+                <div class="dish-header">
+                    <h3>LOREM IPSUM</h3>
+                    <button class="toggle" type="button" aria-expanded="false" aria-controls="desc-1">
+                        <span class="chev" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+                <div class="dish-desc" id="desc-1">
+                    <p>Chuletas de cordero a la plancha con patatas caseras y pimientos asados.</p>
+                    <p>Deliciosas chuletillas de cordero tiernas y jugosas, cocinadas a la plancha para resaltar todo su
+                        sabor.
+                        Acompañadas de crujientes patatas fritas y pimientos rojos asados con un toque de ajo, este
+                        plato
+                        combina la tradición de la cocina mediterránea con ingredientes frescos y de calidad.</p>
+                </div>
+            </div>
+
+            <div class="dish-card" data-collapsed="true">
+                <img src="images/chuleta.jpg" alt="Chuletillas de cordero">
+                <div class="dish-header">
+                    <h3>LOREM IPSUM</h3>
+                    <button class="toggle" type="button" aria-expanded="false" aria-controls="desc-1">
+                        <span class="chev" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+                <div class="dish-desc" id="desc-1">
+                    <p>Chuletas de cordero a la plancha con patatas caseras y pimientos asados.</p>
+                    <p>Deliciosas chuletillas de cordero tiernas y jugosas, cocinadas a la plancha para resaltar todo su
+                        sabor.
+                        Acompañadas de crujientes patatas fritas y pimientos rojos asados con un toque de ajo, este
+                        plato
+                        combina la tradición de la cocina mediterránea con ingredientes frescos y de calidad.</p>
+                </div>
+            </div>
+
+            <div class="dish-card" data-collapsed="true">
+                <img src="images/chuleta.jpg" alt="Chuletillas de cordero">
+                <div class="dish-header">
+                    <h3>LOREM IPSUM</h3>
+                    <button class="toggle" type="button" aria-expanded="false" aria-controls="desc-1">
+                        <span class="chev" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+                <div class="dish-desc" id="desc-1">
+                    <p>Chuletas de cordero a la plancha con patatas caseras y pimientos asados.</p>
+                    <p>Deliciosas chuletillas de cordero tiernas y jugosas, cocinadas a la plancha para resaltar todo su
+                        sabor.
+                        Acompañadas de crujientes patatas fritas y pimientos rojos asados con un toque de ajo, este
+                        plato
+                        combina la tradición de la cocina mediterránea con ingredientes frescos y de calidad.</p>
+                </div>
+            </div>
+
+            <div class="dish-card" data-collapsed="true">
+                <img src="images/chuleta.jpg" alt="Chuletillas de cordero">
+                <div class="dish-header">
+                    <h3>LOREM IPSUM</h3>
+                    <button class="toggle" type="button" aria-expanded="false" aria-controls="desc-1">
+                        <span class="chev" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+                <div class="dish-desc" id="desc-1">
+                    <p>Chuletas de cordero a la plancha con patatas caseras y pimientos asados.</p>
+                    <p>Deliciosas chuletillas de cordero tiernas y jugosas, cocinadas a la plancha para resaltar todo su
+                        sabor.
+                        Acompañadas de crujientes patatas fritas y pimientos rojos asados con un toque de ajo, este
+                        plato
+                        combina la tradición de la cocina mediterránea con ingredientes frescos y de calidad.</p>
+                </div>
+            </div>
+
+            <div class="dish-card" data-collapsed="true">
+                <img src="images/chuleta.jpg" alt="Chuletillas de cordero">
+                <div class="dish-header">
+                    <h3>LOREM IPSUM</h3>
+                    <button class="toggle" type="button" aria-expanded="false" aria-controls="desc-1">
+                        <span class="chev" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+                <div class="dish-desc" id="desc-1">
+                    <p>Chuletas de cordero a la plancha con patatas caseras y pimientos asados.</p>
+                    <p>Deliciosas chuletillas de cordero tiernas y jugosas, cocinadas a la plancha para resaltar todo su
+                        sabor.
+                        Acompañadas de crujientes patatas fritas y pimientos rojos asados con un toque de ajo, este
+                        plato
+                        combina la tradición de la cocina mediterránea con ingredientes frescos y de calidad.</p>
+                </div>
+            </div>
+
+
+            <div class="dish-card" data-collapsed="true">
+                <img src="images/chuleta.jpg" alt="Chuletillas de cordero">
+                <div class="dish-header">
+                    <h3>LOREM IPSUM</h3>
+                    <button class="toggle" type="button" aria-expanded="false" aria-controls="desc-2">
+                        <span class="chev" aria-hidden="true">▾</span>
+                    </button>
+                </div>
+                <div class="dish-desc" id="desc-2">
+                    <p>Chuletas de cordero a la plancha con patatas caseras y pimientos asados.</p>
+                    <p>Deliciosas chuletillas de cordero tiernas y jugosas, cocinadas a la plancha para resaltar todo su
+                        sabor…</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <div class="mapaWeb">
+        <a href="#menus">Menús</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#avisoLegal">Aviso Legal</a>
+
+    </div>
+
+    <a class="center politic" href="#politicaPrivacidad">Política de privacidad</a>
+
+    <div class="center copyright">
+        <p>Copyright ©2025 · El Rincón del Noble S.C.</p>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

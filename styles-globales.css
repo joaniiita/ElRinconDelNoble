@@ -1,0 +1,157 @@
+:root{
+    --body-color: #C5BDAF;
+    --header-color: #48321A;
+    --button-color: #48321A;
+    --button-hover-color: #2E1F10;
+    --input-border: #AFB1B6;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-body: 0.8em;
+}
+*{
+    box-sizing: content-box;
+    margin: 0 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1.5em 1em;
+    position: relative;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0 5rem;
+}
+
+.navbar img{
+    margin: 0 5rem;
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: 1.1em;
+}
+
+.nav-list li a:hover {
+    color: var(--button-color);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding-right: 0.5em;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 2px;
+
+}
+
+.navbar img{
+    width: 70%;
+}
+
+
+.contactHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    color: white;
+    padding: 1em 1em;
+
+}
+
+.contactHeader p{
+    margin: 0 5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+    padding: 1.5em 0;
+    justify-content: center;
+}
+
+footer p, a{
+    color: white;
+    text-decoration: none;
+}
+
+.mapaWeb, .politic{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1em;
+    margin: 0.3em 0;
+}
+
+.copyright{
+    margin: 0.5em 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        font-weight: bold;
+        background-color: black;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        margin: 0 0;
+    }
+
+    .nav-list.active {
+        max-height: 500px;
+    }
+
+    .nav-list li {
+        text-align: center;
+
+    }
+
+    .nav-list #last{
+        padding-bottom: 1.5em;
+    }
+
+    .navbar img {
+        margin: 0 0;
+    }
+
+    .contactHeader p{
+        margin: 0 0;
+    }
+}
