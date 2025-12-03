@@ -115,13 +115,20 @@ h2{
     color: var(--button-color);
 }
 
+.text-start{
+    text-align: start;
+}
+
+form p{
+    margin-bottom: 1em;
+}
 form input{
     border: 2px solid var(--input-border);
     border-radius: 0.5em;
 
     padding: 0.6em 0.3em;
     margin-bottom: 1em;
-
+    margin-top: 0.5em;
 }
 
 form textarea{

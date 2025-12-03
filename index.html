@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="landingStyles.css">
     <link rel="stylesheet" href="styles-globales.css">
-    <title>LandingPage</title>
+    <title>Sitio web de El Rincon Del Noble</title>
 </head>
 <body>
 <header>
@@ -24,14 +24,14 @@
     </div>
     <div class="navHeader">
         <nav class="navbar">
-            <a href="landingpage.html" class="logo"><img src="images/logo-el-rincon-de-noble.png" alt=""></a>
+            <a href="index.html" class="logo"><img src="images/logo-el-rincon-de-noble.png" alt="Logo-Restaurante-ElRinconDelNoble"></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="nav-list">
-                <li><a href="landingpage.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="menus.html">Menú</a></li>
                 <li id="last"><a href="reservas.html">Reservas</a></li>
             </ul>
@@ -55,7 +55,7 @@
             <p>La selección de los mejores productos y la experiencia a lo largo de estos años es lo que nos avala como
                 referente de la restauración de la cocina riojana en nuestra comarca.</p>
         </div>
-        <img src="images/rincondelnoble-8.jpg" alt="">
+        <img src="images/rincondelnoble-8.jpg" alt="Foto-Mesa-Preparada-Interior-Restaurante">
     </section>
 
     <section class="reviews sectionStyle">
@@ -71,32 +71,41 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.037705167396!2d-2.851887523251587!3d42.575722171173815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4f8be6601f59b9%3A0x4bafa5f6cdf55e99!2sRestaurante%20El%20Rinc%C3%B3n%20del%20Noble!5e0!3m2!1sen!2ses!4v1760689424978!5m2!1sen!2ses"
                 width="100%" height="190" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <form class="sectionStyle" method="POST" action=" ">
+        <form class="sectionStyle" method="POST" action="">
             <h2 id="contacto">Contáctanos</h2>
-
-            <div class="col">
+            <p>Todos los campos son obligatorios. Revisa tus datos antes de enviar el formulario.</p>
+            <div class="col text-start">
                 <div class="left">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+                    <label for="email">Email (formato: nombre@dominio.com)</label>
+                    <input type="email" name="email" id="email" placeholder="nombre@dominio.com" required>
                 </div>
                 <div class="right">
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+
+                    <label for="telefono">Teléfono (9 dígitos)</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ej: 600123456" pattern="[0-9]{9}" required>
                 </div>
             </div>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="15" rows="3" placeholder="Introduce tu mensaje" required></textarea>
 
-            <textarea name="mensaje" id="mensaje" cols="15" rows="3" placeholder="Introduce tu mensaje"></textarea>
+            <div id="errores" aria-live="polite"></div>
             <div class="center">
                 <button class="btn" type="submit">Enviar</button>
             </div>
         </form>
+
     </section>
 </main>
 
 <footer>
     <div class="mapaWeb">
-        <a href="#menus">Menús</a>
-        <a href="#reservas">Reservas</a>
+        <a href="menus.html">Menús</a>
+        <a href="reservas.html">Reservas</a>
         <a href="#contacto">Contacto</a>
         <a href="#avisoLegal">Aviso Legal</a>
     </div>
@@ -141,14 +150,14 @@
         container.innerHTML = `
             <div class="profileStars">
                 <div class="profile">
-                    <img src="${r.img}" alt="avatar profile">
+                    <img src="${r.img}" alt="Foto-Perfil-Usuarios">
                     <div class="name">
                         <p id="name">${r.name}</p>
                         <p id="date">${r.date}</p>
                     </div>
                 </div>
                 <div class="stars">
-                    ${'<img src="images/estrella.png" alt="star">'.repeat(r.stars)}
+                    ${'<img src="images/estrella.png" alt="Foto-Estrellas-Reseña">'.repeat(r.stars)}
                 </div>
             </div>
             <div class="comment">
