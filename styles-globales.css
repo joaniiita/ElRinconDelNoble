@@ -111,8 +111,92 @@ footer p, a{
 .center{
     display: flex;
     justify-content: center;
+}
 
+/*Animación 2d*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
 
+.loader {
+    width: 60px;
+    height: 15px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    position: relative;
+    animation: shadow 1s infinite alternate;
+}
+
+.loader::after {
+    content: '🍽️';
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    animation: steam 2s infinite linear;
+}
+
+@keyframes steam {
+    0% { transform: translate(-50%, 0) scale(1); opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { transform: translate(-50%, -60px) scale(1.8); opacity: 0; }
+}
+
+/*Animación 3d*/
+.dish-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    perspective: 1000px;
+    padding: 20px;
+}
+
+.dish-card {
+    background: #ddd9d2;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Efecto Hover 3D */
+.dish-card:hover {
+    transform: rotateX(5deg) rotateY(-5deg) scale(1.02);
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+.dish-card img {
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.dish-card:hover img {
+    transform: translateZ(20px);
+}
+
+.dish-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.dish-card.dish-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {

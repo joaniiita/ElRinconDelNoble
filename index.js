@@ -5,4 +5,7 @@
     menuToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
     console.log('active')
+
+
+
 });
